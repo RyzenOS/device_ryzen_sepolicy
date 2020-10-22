@@ -20,10 +20,10 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/ryzen/sepolicy/common/dynamic \
     device/ryzen/sepolicy/common/system
 else
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/ryzen/sepolicy/common/dynamic \
     device/ryzen/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/arrow/sepolicy/legacy-common/sepolicy.mk
+-include device/ryzen/sepolicy/legacy-common/sepolicy.mk

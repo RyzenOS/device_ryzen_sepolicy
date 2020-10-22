@@ -17,7 +17,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/ryzen/sepolicy/qcom/dynamic \
     device/ryzen/sepolicy/qcom/system
 else
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/ryzen/sepolicy/qcom/dynamic \
     device/ryzen/sepolicy/qcom/vendor
 endif
