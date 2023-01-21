@@ -16,20 +16,20 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/proton/sepolicy/common/public
+    device/ryzen/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/proton/sepolicy/common/private
+    device/ryzen/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/proton/sepolicy/common/dynamic \
-    device/proton/sepolicy/common/system
+    device/ryzen/sepolicy/common/dynamic \
+    device/ryzen/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/proton/sepolicy/common/dynamic \
-    device/proton/sepolicy/common/vendor
+    device/ryzen/sepolicy/common/dynamic \
+    device/ryzen/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/proton/sepolicy/legacy-common/sepolicy.mk
+-include device/ryzen/sepolicy/legacy-common/sepolicy.mk
